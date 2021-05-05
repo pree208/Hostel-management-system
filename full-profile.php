@@ -26,6 +26,7 @@ mysql_select_db($mysql_database, $bd) or die("Could not select database");
   <title>Student Information</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="hostel.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>

@@ -44,42 +44,45 @@ if (isset($_POST['login'])) {
 	<link rel="stylesheet" href="css/fileinput.min.css">
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
 	<link rel="stylesheet" href="css/style.css">
-</head <body>
+	<link rel="stylesheet" href="css/custom.css">
+</head>
 
-<div class="login-page bk-img" style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(img/hostelmess.jpg);">
-	<div class="form-content">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3">
-					<h1 class="text-center text-bold text-light mt-4x">Hostel Management System</h1>
-					<div class="well row pt-2x pb-3x bk-light">
-						<div class="col-md-8 col-md-offset-2">
+<body>
 
-							<form action="" class="mt" method="post">
-								<label for="" class="text-uppercase text-sm">Your Username or Email</label>
-								<input type="text" placeholder="Username" name="username" class="form-control mb">
-								<label for="" class="text-uppercase text-sm">Password</label>
-								<input type="password" placeholder="Password" name="password" class="form-control mb">
+	<div class="login-page bk-img" style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(img/hostelmess.jpg);">
+		<div class="form-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3">
+						<h1 class="text-center text-bold text-light mt-4x">Hostel Management System</h1>
+						<div class="well row pt-2x pb-3x bk-light">
+							<div class="col-md-8 col-md-offset-2">
+
+								<form action="" class="mt" method="post">
+									<label for="" class="text-uppercase text-sm">Your Username or Email</label>
+									<input type="text" placeholder="Username" name="username" class="form-control mb">
+									<label for="" class="text-uppercase text-sm">Password</label>
+									<input type="password" placeholder="Password" name="password" class="form-control mb">
 
 
-								<input type="submit" name="login" class="btn btn-primary btn-block" value="login">
-							</form>
+									<input type="submit" name="login" class="btn btn-primary btn-block" value="login">
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap-select.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.dataTables.min.js"></script>
-<script src="js/dataTables.bootstrap.min.js"></script>
-<script src="js/Chart.min.js"></script>
-<script src="js/fileinput.js"></script>
-<script src="js/chartData.js"></script>
-<script src="js/main.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.min.js"></script>
+	<script src="js/dataTables.bootstrap.min.js"></script>
+	<script src="js/Chart.min.js"></script>
+	<script src="js/fileinput.js"></script>
+	<script src="js/chartData.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 <div class="foot">

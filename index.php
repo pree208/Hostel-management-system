@@ -54,6 +54,7 @@ if (isset($_POST['login'])) {
   <link rel="stylesheet" href="css/fileinput.min.css">
   <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/custom.css">
   <script type="text/javascript" src="js/jquery-1.11.3-jquery.min.js"></script>
   <script type="text/javascript" src="js/validation.min.js"></script>
   <script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>
@@ -69,19 +70,19 @@ if (isset($_POST['login'])) {
   </script>
 </head>
 
-<body>
+<body style="background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(img/hostelpic.jpg);background-size:cover;background-position:center;">
 
 
   <?php include('includes/header.php'); ?>
-  <div class="ts-main-content">
+  <div class=" ts-main-content ">
     <?php include('includes/sidebar.php'); ?>
-    <div class="content-wrapper">
+    <div class=" content-wrapper">
       <div class="container-fluid">
 
-        <div class="row">
-          <div class="col-md-12">
+        <div class=" row">
+          <div class="col-md-12 ">
 
-            <h2 class="page-title">User Login </h2>
+            <h2 class=" page-title">User Login </h2>
 
             <div class="row">
               <div class="col-md-6 col-md-offset-3">
@@ -100,7 +101,7 @@ if (isset($_POST['login'])) {
                   </div>
                 </div>
                 <div class="text-center text-light" style="color:black;">
-                  <a href="forgot-password.php" style="color:black;">Forgot password?</a>
+                  <a href="forgot-password.php" style="color:#fff;text-decoration:underline;font-size:16px;">Forgot password?</a>
                 </div>
               </div>
             </div>

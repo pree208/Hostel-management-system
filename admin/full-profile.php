@@ -25,6 +25,7 @@ $bd = mysqli_connect($mysql_hostname, $mysql_user, $mysql_password, $mysql_datab
   <title>Student Information</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
   <link href="hostel.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/custom.css">
 </head>
 
 <body>

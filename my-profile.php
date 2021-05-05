@@ -41,6 +41,7 @@ if (isset($_POST['update'])) {
 	<link rel="stylesheet" href="css/fileinput.min.css">
 	<link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
 	<script type="text/javascript" src="js/jquery-1.11.3-jquery.min.js"></script>
 	<script type="text/javascript" src="js/validation.min.js"></script>
 	<script type="text/javascript" src="http://code.jquery.com/jquery.min.js"></script>

@@ -51,7 +51,7 @@ if ($_POST['submit']) {
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Add Courses </h2>
+						<h2 class="page-title page-title-color">Add Courses </h2>
 
 						<div class="row">
 							<div class="col-md-12">

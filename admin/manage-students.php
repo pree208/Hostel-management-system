@@ -24,7 +24,7 @@ if (isset($_GET['del'])) {
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<meta name="theme-color" content="#3e454c">
-	<title>Manage Rooms</title>
+	<title>Manage Students</title>
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/dataTables.bootstrap.min.css">
@@ -56,7 +56,7 @@ if (isset($_GET['del'])) {
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="page-title">Manage Rooms</h2>
+						<h2 class="page-title page-title-color">Manage Rooms</h2>
 						<div class="panel panel-default">
 							<div class="panel-heading">All Room Details</div>
 							<div class="panel-body">

@@ -75,7 +75,7 @@ if (isset($_POST['update'])) {
 				?>
 					<div class="row">
 						<div class="col-md-12">
-							<h2 class="page-title"><?php echo $row->firstName; ?>'s&nbsp;Profile </h2>
+							<h2 class="page-title page-title-color "><?php echo $row->firstName; ?>'s&nbsp;Profile </h2>
 
 							<div class="row">
 								<div class="col-md-12">

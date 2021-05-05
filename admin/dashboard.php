@@ -41,7 +41,7 @@ check_login();
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Dashboard</h2>
+						<h2 class="page-title page-title-color">Dashboard</h2>
 
 						<div class="row">
 							<div class="col-md-12">
@@ -163,7 +163,7 @@ check_login();
 
 <div class="foot">
 	<footer>
-		<p> Subscribe to <a href="https://youtube.com/technicalbabaji1" target="_blank">Technical Babaji</p>
+
 	</footer>
 </div>
 

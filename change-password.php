@@ -73,7 +73,7 @@ if (isset($_POST['changepwd'])) {
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Change Password </h2>
+						<h2 class="page-title page-title-color">Change Password </h2>
 
 						<div class="row">
 

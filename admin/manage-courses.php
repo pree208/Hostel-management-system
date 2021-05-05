@@ -45,7 +45,7 @@ if (isset($_GET['del'])) {
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="page-title">Manage Course</h2>
+						<h2 class="page-title page-title-color">Manage Course</h2>
 						<div class="panel panel-default">
 							<div class="panel-heading">All Courses Details</div>
 							<div class="panel-body">

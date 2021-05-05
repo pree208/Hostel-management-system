@@ -50,7 +50,7 @@ if ($_POST['submit']) {
 				<div class="row">
 					<div class="col-md-12">
 
-						<h2 class="page-title">Edit Room Details </h2>
+						<h2 class="page-title page-title-color">Edit Room Details </h2>
 
 						<div class="row">
 							<div class="col-md-12">

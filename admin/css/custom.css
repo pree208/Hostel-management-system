@@ -46,6 +46,25 @@ th{
 .logo-color:visited,
 .logo-color:hover{color:#fff;
                   text-decoration: none;}
+.bk-success{
+  background:#ff3366;
+}
+.bk-primary{
+  background:#ff3366;
+}
+
+.bk-info{
+  background: #ff3366;
+}
+
+.panel-primary>.panel-heading{
+  background-color: #ff3366;
+}
+
+.page-title-color{
+  padding-top: 15px;
+   color:#ff3366;
+ }
 
 
 

@@ -31,18 +31,38 @@ if ($_POST['submit']) {
 	$pcity = $_POST['pcity'];
 	$pstate = $_POST['pstate'];
 	$ppincode = $_POST['ppincode'];
-	$query = "insert into  registration(roomno,seater,feespm,foodstatus,stayfrom,duration,course,regno,firstName,middleName,lastName,gender,contactno,emailid,egycontactno,guardianName,guardianRelation,guardianContactno,corresAddress,corresCIty,corresState,corresPincode,pmntAddress,pmntCity,pmnatetState,pmntPincode) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+	$query = "insert into  registration(roomno,seater,feespm,foodstatus,stayfrom,duration,course,regno,firstName,middleName,lastName,gender,contactno,emailid,egycontactno,guardianName,guardianRelation,guardianContactno,corresAddress,corresCIty,corresState,corresPincode,pmntAddress,pmntCity,pmnatetState,pmntPincode,updationDate) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,'')";
 	$stmt = $mysqli->prepare($query);
+	if (false === $stmt) {
+		die('prepare() failed: ' . htmlspecialchars($mysqli->error));
+	}
 	$rc = $stmt->bind_param('iiiisisissssisississsisssi', $roomno, $seater, $feespm, $foodstatus, $stayfrom, $duration, $course, $regno, $fname, $mname, $lname, $gender, $contactno, $emailid, $emcntno, $gurname, $gurrelation, $gurcntno, $caddress, $ccity, $cstate, $cpincode, $paddress, $pcity, $pstate, $ppincode);
-	$stmt->execute();
+	if (false === $rc) {
+		// again execute() is useless if you can't bind the parameters. Bail out somehow.
+		die('bind_param() failed: ' . htmlspecialchars($stmt->error));
+	}
+	$rc = $stmt->execute();
+	if (false === $rc) {
+		die('execute() failed: ' . htmlspecialchars($stmt->error));
+	}
 	$stmt->close();
 
 
-	$query1 = "insert into  userregistration(regNo,firstName,middleName,lastName,gender,contactNo,email,password) values(?,?,?,?,?,?,?,?)";
+	$query1 = "insert into  userregistration(regNo,firstName,middleName,lastName,gender,contactNo,email,password,updationDate,passUdateDate) values(?,?,?,?,?,?,?,?,'','')";
 	$stmt1 = $mysqli->prepare($query1);
-	$stmt1->bind_param('sssssiss', $regno, $fname, $mname, $lname, $gender, $contactno, $emailid, $contactno);
-	$stmt1->execute();
-	echo "<script>alert('Student Successfully registered');</script>";
+	if (false === $stmt1) {
+		die('prepare() failed: ' . htmlspecialchars($mysqli->error));
+	}
+	$rc = $stmt1->bind_param('sssssiss', $regno, $fname, $mname, $lname, $gender, $contactno, $emailid, $contactno);
+	if (false === $rc) {
+		// again execute() is useless if you can't bind the parameters. Bail out somehow.
+		die('bind_param() failed: ' . htmlspecialchars($stmt1->error));
+	}
+	$rc = $stmt1->execute();
+	if (false === $rc) {
+		die('execute() failed: ' . htmlspecialchars($stmt1->error));
+	}
+	echo "<script>alert('Student Succssfully register');</script>";
 }
 ?>
 

@@ -62,17 +62,7 @@ if (isset($_GET['del'])) {
 											<th>Action</th>
 										</tr>
 									</thead>
-									<tfoot>
-										<tr>
-											<th>Sno.</th>
-											<th>Seater</th>
-											<th>Room No.</th>
 
-											<th>Fees (PM) </th>
-											<th>Posting Date </th>
-											<th>Action</th>
-										</tr>
-									</tfoot>
 									<tbody>
 										<?php
 										$aid = $_SESSION['id'];

@@ -60,16 +60,7 @@ if (isset($_GET['del'])) {
 											<th>Action</th>
 										</tr>
 									</thead>
-									<tfoot>
-										<tr>
-											<th>Sl No</th>
-											<th>Course Code</th>
-											<th>Course Name(Short)</th>
-											<th>Course Name(Full)</th>
-											<th>Regd Date</th>
-											<th>Action</th>
-										</tr>
-									</tfoot>
+
 									<tbody>
 										<?php
 										$aid = $_SESSION['id'];

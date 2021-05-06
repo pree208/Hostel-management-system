@@ -73,31 +73,21 @@ if (isset($_GET['del'])) {
 											<th>Action</th>
 										</tr>
 									</thead>
-									<tfoot>
-										<tr>
-											<th>Sno.</th>
-											<th>Student Name</th>
-											<th>Reg no</th>
-											<th>Contact no </th>
-											<th>Room no </th>
-											<th>Seater </th>
-											<th>Staying From </th>
-											<th>Action</th>
-										</tr>
-									</tfoot>
+
 									<tbody>
 										<?php
+
 										$aid = $_SESSION['id'];
 										$ret = "select * from registration";
 										$stmt = $mysqli->prepare($ret);
-										//$stmt->bind_param('i',$aid);
+										//$stmt->bind_param('i', $aid);
 										$stmt->execute(); //ok
 										$res = $stmt->get_result();
 										$cnt = 1;
 										while ($row = $res->fetch_object()) {
 										?>
 											<tr>
-												<td><?php echo $cnt;; ?></td>
+												<td><?php echo $cnt; ?></td>
 												<td><?php echo $row->firstName; ?><?php echo $row->middleName; ?><?php echo $row->lastName; ?></td>
 												<td><?php echo $row->regno; ?></td>
 												<td><?php echo $row->contactno; ?></td>
